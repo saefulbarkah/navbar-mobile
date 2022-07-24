@@ -9,9 +9,10 @@ window.addEventListener("scroll", () => {
 const navMobile = () => {
   const mobile = document.querySelector(".mobile-navbar");
   const closeBtn = document.querySelector(".btn-close-nav");
-  mobile.classList.remove("transform", "translate-y-full");
   mobile.classList.add("transition");
+  mobile.classList.remove("transform", "translate-y-full");
   closeBtn.addEventListener("click", (event) => {
     mobile.classList.add("transform", "translate-y-full");
+    mobile.classList.remove("transition");
   });
 };

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/style.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-slate-900 text-white">
+    <header
+      class="header border-b drop-shadow-2xl border-slate-700 transition-all w-full sticky top-0"
+    >
+      <nav class="container mx-auto items-center flex justify-between">
+        <div class="flex text-white">
+          <div class="font-bold">LOGO</div>
+        </div>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="navbar-mobile inline-flex items-center p-2 my-5 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          onclick="navMobile()"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden md:block">
+          <ul class="flex py-5 space-x-10">
+            <li class="text-white font-semibold capitalize">
+              <a href="">Beranda</a>
+            </li>
+            <li
+              class="text-white hover:opacity-100 transition-all opacity-60 font-semibold capitalize"
+            >
+              <a href="">Tentang</a>
+            </li>
+            <li
+              class="text-white hover:opacity-100 transition-all opacity-60 font-semibold capitalize"
+            >
+              <a href="">Portofolio</a>
+            </li>
+            <li
+              class="text-white hover:opacity-100 transition-all opacity-60 font-semibold capitalize"
+            >
+              <a href="">Hubungi</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <nav
+      class="mobile-navbar transform translate-y-full fixed z-50 mx-auto md:hidden bottom-0 w-full bg-slate-900/50 backdrop-blur-sm"
+    >
+      <!-- navbar mobile bottom -->
+      <div class="">
+        <ul class="flex flex-col py-5 px-5 text-2xl">
+          <li
+            class="opacity-100 text-white hover:opacity-100 transition-all font-semibold capitalize mb-5 flex justify-between items-center"
+          >
+            <a href="/">Beranda</a>
+            <button
+              href=""
+              class="btn-close-nav bg-slate-800/50 border border-sky-800 hover:bg-sky-800 transition p-2 rounded-lg"
+            >
+              <img src="../dist/assets/x.svg" alt="" width="20" />
+            </button>
+          </li>
+          <li
+            class="text-white/50 hover:text-white/100 transition-colors font-semibold capitalize mb-5"
+          >
+            <a href="">Tentang</a>
+          </li>
+          <li
+            class="text-white/50 hover:text-white/100 transition-colors font-semibold capitalize mb-5"
+          >
+            <a href="">Portofolio</a>
+          </li>
+          <a
+            href=""
+            class="bg-sky-500/20 border border-sky-500 hover:bg-sky-500/100 transition shadow-sm font-semibold w-full text-center py-3 rounded-xl"
+            >Hubungi</a
+          >
+        </ul>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <div class="main h-screen">
+      <section class="hero">
+        <div class="flex">
+          <h1>Welcome</h1>
+        </div>
+      </section>
+    </div>
+
+    <footer class="w-full bottom-0 border">
+      <p>Lorem</p>
+    </footer>
+  </body>
+
+  <!-- javascript -->
+  <script src="js/navbar.js"></script>
+</html>
